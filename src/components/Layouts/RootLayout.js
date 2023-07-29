@@ -145,26 +145,10 @@ const RootLayout = ({ children }) => {
           </h1>
         </div>
         <Menu theme="dark" mode="vertical" className={styles.menu_items}>
-          <Link href="/allNews">
-            <items>
+          <Link href="/">
+            <items className="flex  items-center justify-center gap-1">
               <ProfileOutlined />
-              All News
-            </items>
-          </Link>
-          <Link href="/about">
-            <items
-              style={{
-                margin: "0px 25px",
-              }}
-            >
-              <UserOutlined />
-              About Us
-            </items>
-          </Link>
-          <Link href="/contact">
-            <items>
-              <MobileOutlined />
-              Contact Us
+              All Product
             </items>
           </Link>
         </Menu>
