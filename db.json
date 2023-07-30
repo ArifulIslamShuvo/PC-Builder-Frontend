@@ -1,217 +1,387 @@
 {
-    "products": [
-      {
-        "id": "1",
-        "title": "MSI PRO MP223 21.45' Full HD Business Monitor",
-        "img": "https://i.ibb.co/LngbJpc/mp223-06-500x500.webp",
-        "price": 9800,
-        "category": "monitor",
-        "status": "In Stock",
-        "rating": "4 out of 5",
-        "descriptions":"This 21.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate. It is equipped with AMD FreeSync technology to reduce screen tearing and stuttering, and it has a flicker-free design to help reduce eye strain."
+  "products": [
+    {
+      "id": "1",
+      "title": "MSI PRO MP223 21.45' Full HD Business Monitor",
+      "img": "https://i.ibb.co/LngbJpc/mp223-06-500x500.webp",
+      "price": 9800,
+      "category": "monitor",
+      "status": "In Stock",
+      "rating": "4 out of 5",
+      "key_features": {
+        "model": "PRO MP223",
+        "brand": "MSI",
+        "resolution": "FHD (1920 x 1080)",
+        "ports": "1x HDMI, 1x VGA, 1x Audio Out"
       },
-      {
-        "id": "2",
-        "title": "A4TECH OP-730D 2X Click Optical Wired Mouse",
-        "img": "https://i.ibb.co/Zc21bd7/730d-main-500x500.jpg",
-        "price": 450,
-        "category": "other",
-        "status": "In Stock",
-        "rating": "4.3 out of 5",
-        "descriptions": "This wired mouse features a 2X click function that allows you to double-click with a single click. It also has a 1000Hz polling rate for smooth cursor movement, and it is equipped with 4 DPI settings (800/1200/1600/2400) for different needs."
-    
+      "individual_rating": "4.6 Out of 5 Stars",
+      "average_rating": "4.2 Out of 5 Stars",
+      "reviews": "super monitor. clean display",
+      "descriptions": "This 21.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate. It is equipped with AMD FreeSync technology to reduce screen tearing and stuttering, and it has a flicker-free design to help reduce eye strain."
+    },
+    {
+      "id": "2",
+      "title": "A4TECH OP-730D 2X Click Optical Wired Mouse",
+      "img": "https://i.ibb.co/Zc21bd7/730d-main-500x500.jpg",
+      "price": 450,
+      "category": "other",
+      "status": "In Stock",
+      "rating": "4.3 out of 5",
+      "key_features": {
+        "model": "OP-730D",
+        "brand": "A4Tech",
+        "resolution": "1000 DPI resolution"
       },
-      {
-        "id": "3",
-        "title": "Micropack K2208 USB Mini Keyboard",
-        "img": "https://i.ibb.co/J3xyMVG/k2208-03-500x500.webp",
-        "price": 650,
-        "category": "other",
-        "status": "Out of Stock",
-        "rating": "4.3 out of 5",
-        "descriptions": "This mini keyboard is a great portable keyboard for travel or use with a laptop. It is compact and lightweight, and it has a built-in touchpad for easy navigation. The keyboard also has 104 keys, including a full number pad, for a comfortable typing experience."
-    
+      "individual_rating": "4.6 Out of 5 Stars",
+      "average_rating": "4.5 Out of 5 Stars",
+      "reviews": "superb mouse",
+      "descriptions": "This wired mouse features a 2X click function that allows you to double-click with a single click. It also has a 1000Hz polling rate for smooth cursor movement, and it is equipped with 4 DPI settings (800/1200/1600/2400) for different needs."
+    },
+    {
+      "id": "3",
+      "title": "Micropack K2208 USB Mini Keyboard",
+      "img": "https://i.ibb.co/J3xyMVG/k2208-03-500x500.webp",
+      "price": 650,
+      "category": "other",
+      "status": "Out of Stock",
+      "rating": "4.3 out of 5",
+      "key_features": {
+        "model": "Micropack K2208",
+        "brand": "Micropack",
+        "resolution": "USB 2.0"
       },
-      {
-        "id": "4",
-        "title": "TEAM C175 128GB 3.2 USB Pendrive",
-        "img": "https://i.ibb.co/9svwdqr/c175-01-500x500.jpg",
-        "price": 999,
-        "category": "storage-device",
-        "status": "In Stock",
-        "rating": "4.5 out of 5",
-        "descriptions": "This 128GB USB pendrive is a great way to store your files and data. It is small and lightweight, making it easy to carry around, and it has a high transfer speed of up to 150MB/s. The pendrive is also USB 3.2 compatible, so you can take advantage of the latest high-speed data transfer technology."
-    
+      "individual_rating": "4.3 Out of 5 Stars",
+      "average_rating": "4.2 Out of 5 Stars",
+      "reviews": "superb keyboard",
+      "descriptions": "This mini keyboard is a great portable keyboard for travel or use with a laptop. It is compact and lightweight, and it has a built-in touchpad for easy navigation. The keyboard also has 104 keys, including a full number pad, for a comfortable typing experience."
+    },
+    {
+      "id": "4",
+      "title": "TEAM C175 128GB 3.2 USB Pendrive",
+      "img": "https://i.ibb.co/9svwdqr/c175-01-500x500.jpg",
+      "price": 999,
+      "category": "storage-device",
+      "status": "In Stock",
+      "rating": "4.5 out of 5",
+      "key_features": {
+        "model": "Team C162",
+        "brand": "Team",
+        "resolution": "Interface USB 3.1 Gen 2 (USB 3.0)"
       },
-      {
-        "id": "5",
-        "title": "AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon Vega 3 Graphics",
-        "img": "https://i.ibb.co/Kqd055m/athlon-500x500.jpg",
-        "price": 7200,
-        "category": "processor",
-        "status": "Out of Stock",
-        "rating": "4 out of 5",
-        "descriptions": "This processor is a great option for budget-minded gamers and PC builders. It features two cores and four threads, and it is equipped with Radeon Vega 3 graphics. The processor is also compatible with the latest AM4 socket motherboards, so you can easily upgrade your system in the future."
+      "individual_rating": "4.5 Out of 5 Stars",
+      "average_rating": "4 Out of 5 Stars",
+      "reviews": "superb  pen drive",
+      "descriptions": "This 128GB USB pendrive is a great way to store your files and data. It is small and lightweight, making it easy to carry around, and it has a high transfer speed of up to 150MB/s. The pendrive is also USB 3.2 compatible, so you can take advantage of the latest high-speed data transfer technology."
+    },
+    {
+      "id": "5",
+      "title": "AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon Vega 3 Graphics",
+      "img": "https://i.ibb.co/Kqd055m/athlon-500x500.jpg",
+      "price": 7200,
+      "category": "processor",
+      "status": "Out of Stock",
+      "rating": "4 out of 5",
+      "key_features": {
+        "model": "Athlon 200GE",
+        "brand": "AMD",
+        "resolution": "Base Clock Speed 3.2GHz"
       },
-      {
-        "id": "6",
-        "title": "Intel 10th Gen Core i3 10100F Processor",
-        "img": "https://i.ibb.co/DMX75P4/i3-10100-500x500.jpg",
-        "price": 8200,
-        "category": "processor",
-        "status": "In Stock",
-        "rating": "4.6 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.2 Out of 5 Stars",
+      "average_rating": "4.6 Out of 5 Stars",
+      "reviews": "superb processor",
+      "descriptions": "This processor is a great option for budget-minded gamers and PC builders. It features two cores and four threads, and it is equipped with Radeon Vega 3 graphics. The processor is also compatible with the latest AM4 socket motherboards, so you can easily upgrade your system in the future."
+    },
+    {
+      "id": "6",
+      "title": "Intel 10th Gen Core i3 10100F Processor",
+      "img": "https://i.ibb.co/DMX75P4/i3-10100-500x500.jpg",
+      "price": 8200,
+      "category": "processor",
+      "status": "In Stock",
+      "rating": "4.6 out of 5",
+      "key_features": {
+        "model": "Intel Core i3 10100F",
+        "brand": "INTEL",
+        "resolution": "Speed 3.60 up to 4.30 GHz"
       },
-      {
-        "id": "7",
-        "title": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
-        "img": "https://i.ibb.co/YX3jkGY/h81m-vg4-r4-0-01-500x500.jpg",
-        "price": 8000,
-        "category": "motherboard",
-        "status": "In Stock",
-        "rating": "4.7 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.7 Out of 5 Stars",
+      "average_rating": "4.4 Out of 5 Stars",
+      "reviews": "superb processor",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "7",
+      "title": "ASRock H81M-VG4 R4.0 4th Gen Micro ATX Motherboard",
+      "img": "https://i.ibb.co/YX3jkGY/h81m-vg4-r4-0-01-500x500.jpg",
+      "price": 8000,
+      "category": "motherboard",
+      "status": "In Stock",
+      "rating": "4.7 out of 5",
+      "key_features": {
+        "model": "H81M-VG4 R4.0",
+        "brand": "ASRock",
+        "resolution": "Supports Dual Channel DDR3 1600"
       },
-      {
-        "id": "8",
-        "title": "Gigabyte GA-H110M S2PH-DDR4 Motherboard",
-        "img": "https://i.ibb.co/FW59r8D/Gigabyte-GA-H110-M-S2-PH-DDR4-500x500.jpg",
-        "price": 8900,
-        "category": "motherboard",
-        "status": "In Stock",
-        "rating": "4.5 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.7 Out of 5 Stars",
+      "average_rating": "4.4 Out of 5 Stars",
+      "reviews": "superb motherboard",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "8",
+      "title": "Gigabyte GA-H110M S2PH-DDR4 Motherboard",
+      "img": "https://i.ibb.co/FW59r8D/Gigabyte-GA-H110-M-S2-PH-DDR4-500x500.jpg",
+      "price": 8900,
+      "category": "motherboard",
+      "status": "In Stock",
+      "rating": "4.5 out of 5",
+      "key_features": {
+        "model": "GA-H110M S2PH-DDR4",
+        "brand": "GIGABYTE",
+        "resolution": "8-channel HD Audio with High-Quality Audio Capacitors"
       },
-      {
-        "id": "9",
-        "title": "Gigabyte GA-H81M-S2PH Micro ATX Motherboard",
-        "img": "https://i.ibb.co/wsK198Z/ga-h81m-s2ph-500x500.jpg",
-        "price": 7900,
-        "category": "motherboard",
-        "status": "In Stock",
-        "rating": "4.8 out of 5",
-        "descriptions":""
+      "individual_rating": "4.8 Out of 5 Stars",
+      "average_rating": "4.4 Out of 5 Stars",
+      "reviews": "superb motherboard",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "9",
+      "title": "Gigabyte GA-H81M-S2PH Micro ATX Motherboard",
+      "img": "https://i.ibb.co/wsK198Z/ga-h81m-s2ph-500x500.jpg",
+      "price": 7900,
+      "category": "motherboard",
+      "status": "In Stock",
+      "rating": "4.8 out of 5",
+      "key_features": {
+        "model": "GA-H81M-S2PH",
+        "brand": "GIGABYTE",
+        "resolution": "GIGABYTE UEFI DualBIOS"
       },
-      {
-        "id": "10",
-        "title": "Transcend 4GB JM DDR4 3200Mhz SO-DIMM Laptop RAM",
-        "img": "https://i.ibb.co/5WdrTYV/jm3200hsh-4g-500x500.jpg",
-        "price": 1500,
-        "category": "ram",
-        "status": "In Stock",
-        "rating": "4.3 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.8 Out of 5 Stars",
+      "average_rating": "4.6 Out of 5 Stars",
+      "reviews": "superb motherboard",
+      "descriptions": "GIGABYTE 8 Series motherboards support the latest 4th Generation Intel Core processors, bringing together a unique blend of features and technologies that offer the absolute ultimate platform for your next PC build. "
+     
+    },
+    {
+      "id": "10",
+      "title": "Transcend 4GB JM DDR4 3200Mhz SO-DIMM Laptop RAM",
+      "img": "https://i.ibb.co/5WdrTYV/jm3200hsh-4g-500x500.jpg",
+      "price": 1500,
+      "category": "ram",
+      "status": "In Stock",
+      "rating": "4.3 out of 5",
+      "key_features": {
+        "model": "JM",
+        "brand": "Transcend",
+        "resolution": "4GB, CAS Latency: CL22"
       },
-      {
-        "id": "11",
-        "title": "Crucial 8GB Single DDR4 2666MHz Laptop RAM",
-        "img": "https://i.ibb.co/b1ddC1k/single-ddr4-2666-500x500.jpg",
-        "price": 2700,
-        "category": "ram",
-        "status": "In Stock",
-        "rating": "4.7 out of 5",
-        "descriptions":""
+      "individual_rating": "4.8 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb ram",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "11",
+      "title": "Crucial 8GB Single DDR4 2666MHz Laptop RAM",
+      "img": "https://i.ibb.co/b1ddC1k/single-ddr4-2666-500x500.jpg",
+      "price": 2700,
+      "category": "ram",
+      "status": "In Stock",
+      "rating": "4.7 out of 5",
+      "key_features": {
+        "model": "Crucial Single DDR4 2666MHz",
+        "brand": "Crucial",
+        "resolution": "2666 MHz Clock Speed"
       },
-      {
-        "id": "12",
-        "title": "Lexar 8GB DDR4 3200MHz SODIMM Laptop RAM",
-        "img": "https://i.ibb.co/gZXjBQK/ddr4-3200mhz-1-500x500.jpg",
-        "price": 3200,
-        "category": "ram",
-        "status": "Out of Stock",
-        "rating": "4 out of 5",
-        "descriptions":""
+      "individual_rating": "4.3 Out of 5 Stars",
+      "average_rating": "4.2 Out of 5 Stars",
+      "reviews": "superb ram",
+      "descriptions": "Memory is a component in your computer that allows for short-term data access. Since your systemâ€™s moment-to-moment operations rely on short-term data access â€“ loading applications, browsing the Web or editing a spreadsheet â€“ the speed and amount of memory in your system plays a critical role. Load apps in seconds by increasing the speed of your memory and installing more of it. If youâ€™re like us, you use your computer to do a lot of things at once. "
+    },
+    {
+      "id": "12",
+      "title": "Lexar 8GB DDR4 3200MHz SODIMM Laptop RAM",
+      "img": "https://i.ibb.co/gZXjBQK/ddr4-3200mhz-1-500x500.jpg",
+      "price": 3200,
+      "category": "ram",
+      "status": "Out of Stock",
+      "rating": "4 out of 5",
+      "key_features": {
+        "model": "DDR4 3200MHz SODIMM",
+        "brand": "Lexar",
+        "resolution": "High-speed performance"
       },
-      {
-        "id": "13",
-        "title": "ASUS ROG THOR 1200P2 GAMING 80 Plus Platinum 1200W Power Supply",
-        "img": "https://i.ibb.co/zm0NyL9/thor-1200p2-500x500.webp",
-        "price": 50000,
-        "category": "Power Supply Unit",
-        "status": "In Stock",
-        "rating": "4.6 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.4 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb ram",
+      "descriptions": "The Lexar DDR4 3200MHz SODIMM Laptop RAM comes with 8GB capacity. It will provides you faster startups, increased responsiveness and quicker application load times with excellent performance. In addition, It is featues with 260 Pin, JEDEC Standard, CL22 CAS Latency, 1.2V Voltage, 0Â°C to 85Â°C (Surface) Operating temperature, -55Â°C to 100Â°C Storage Temperature. It is also features with limited steps to install Lexar DDR4, and youâ€™ll get a boost in your computing performance in no time. This new Lexar DDR4 3200MHz SODIMM Laptop RAM has Lifetime Warranty."
+     
+    },
+    {
+      "id": "13",
+      "title": "ASUS ROG THOR 1200P2 GAMING 80 Plus Platinum 1200W Power Supply",
+      "img": "https://i.ibb.co/zm0NyL9/thor-1200p2-500x500.webp",
+      "price": 50000,
+      "category": "Power Supply Unit",
+      "status": "In Stock",
+      "rating": "4.6 out of 5",
+      "key_features": {
+        "model": "THOR 1200P2",
+        "brand": "Asus",
+        "resolution": "OLED Power Display"
       },
-      {
-        "id": "14",
-        "title": "Corsair HX1500i 1500W 80+ Platinum Full-Modular ATX Power Supply",
-        "img": "https://i.ibb.co/PjP0JR4/hx1500i-1500w-01-500x500.webp",
-        "price": 45000,
-        "category": "power-supply-unit",
-        "status": "In Stock",
-        "rating": "4.2 out of 5"
-        ,"descriptions":""
+      "individual_rating": "4.4 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb power supply",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz."
+    },
+    {
+      "id": "14",
+      "title": "Corsair HX1500i 1500W 80+ Platinum Full-Modular ATX Power Supply",
+      "img": "https://i.ibb.co/PjP0JR4/hx1500i-1500w-01-500x500.webp",
+      "price": 45000,
+      "category": "power-supply-unit",
+      "status": "In Stock",
+      "rating": "4.2 out of 5",
+      "key_features": {
+        "model": "HX1500i 1500W",
+        "brand": "Corsair",
+        "resolution": "Corsair"
       },
-      {
-        "id": "15",
-        "title": "MSI MEG Ai1300P PCIE5 1300W 80 Plus Platinum Fully Modular Power Supply",
-        "img": "https://i.ibb.co/F4P9z9D/meg-ai1300p-pcie5-1300w-01-500x500.webp",
-        "price": 36000,
-        "category": "Power Supply Unit",
-        "status": "Out of Stock",
-        "rating": "4 out of 5",
-        "descriptions":""
+      "individual_rating": "4.4 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb power supply",
+      "descriptions": "The Corsair HXi Series Fully Modular Power Supply is Ultra-Low Noise with three EPS12V connections and employs the finest quality components to produce 80 PLUS Platinum efficient power. With three EPS12V ports and completely modular wiring, HXi Series platinum power supplies provide every connection needed to support today's most demanding PC upgrades now and in the future, including the newest generation of power-hungry graphics cards and CPUs."
+    },
+    {
+      "id": "15",
+      "title": "MSI MEG Ai1300P PCIE5 1300W 80 Plus Platinum Fully Modular Power Supply",
+      "img": "https://i.ibb.co/F4P9z9D/meg-ai1300p-pcie5-1300w-01-500x500.webp",
+      "price": 36000,
+      "category": "Power Supply Unit",
+      "status": "Out of Stock",
+      "rating": "4 out of 5",
+      "key_features": {
+        "model": "MEG Ai1300P PCIE5",
+        "brand": "MSI",
+        "resolution": "Supports Nvidia GeForce RTX 40 Series GPU"
       },
-      {
-        "id": "16",
-        "title": "Apacer AH155 64GB USB 3.2 Gen 1 Flash Drive",
-        "img": "https://i.ibb.co/mt8PrKT/ah155-01-500x500.webp",
-        "price": 1100,
-        "category": "storage-device",
-        "status": "In Stock",
-        "rating": "4.5 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.4 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb power supply",
+      "descriptions": "The MSI MEG Ai1300P PCIE5 1300W Power Supply, is a cutting-edge solution designed to meet the power demands of high-performance gaming and computing systems. This power supply is engineered to deliver outstanding performance, efficiency, and reliability to ensure your system operates at its best."
+    },
+    {
+      "id": "16",
+      "title": "Apacer AH155 64GB USB 3.2 Gen 1 Flash Drive",
+      "img": "https://i.ibb.co/mt8PrKT/ah155-01-500x500.webp",
+      "price": 1100,
+      "category": "storage-device",
+      "status": "In Stock",
+      "rating": "4.5 out of 5",
+      "key_features": {
+        "model": "AH15A",
+        "brand": "Apacer",
+        "resolution": "Plug and Play",
+        "individual_rating": "4.4 Out of 5 Stars",
+        "average_rating": "4.4 Out of 5 Stars",
+        "reviews": "superb pen drive"
       },
-      {
-        "id": "17",
-        "title": "Transcend TS128GJF790K 128GB USB 3.0 Pen Drive",
-        "img": "https://i.ibb.co/rwsyMtS/Transcend-TS128-GJF790-K-1-500x500.jpg",
-        "price": 1270,
-        "category": "storage-device",
-        "status": "Out of Stock",
-        "rating": "4.5 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "17",
+      "title": "Transcend TS128GJF790K 128GB USB 3.0 Pen Drive",
+      "img": "https://i.ibb.co/rwsyMtS/Transcend-TS128-GJF790-K-1-500x500.jpg",
+      "price": 1270,
+      "category": "storage-device",
+      "status": "Out of Stock",
+      "rating": "4.5 out of 5",
+      "key_features": {
+        "model": "Transcend TS128GJF790K",
+        "brand": "Transcend",
+        "resolution": "USB 3.0 data transfer performance"
       },
-      {
-        "id": "18",
-        "title": "Intel Pentium Gold G6405 Coffee Lake Processor",
-        "img": "https://i.ibb.co/7RKmLbP/pentium-gold-g6405-01-500x500.webp",
-        "price": 7000,
-        "category": "processor",
-        "status": "In Stock",
-        "rating": "4 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+      "individual_rating": "4.5 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb pen drive",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "18",
+      "title": "Intel Pentium Gold G6405 Coffee Lake Processor",
+      "img": "https://i.ibb.co/7RKmLbP/pentium-gold-g6405-01-500x500.webp",
+      "price": 7000,
+      "category": "processor",
+      "status": "In Stock",
+      "rating": "4 out of 5",
+      "key_features": {
+        "model": "Intel Pentium Gold G6405",
+        "brand": "INTEL",
+        "resolution": "Intel UHD Graphics 610"
       },
-      {
-        "id": "19",
-        "title": "LG 22MK600M-B 21.5 inch IPS Full HD LED Monitor",
-        "img": "https://i.ibb.co/h1tGcY4/lg-22mk600m-1-500x500.jpg",
-        "price": 14700,
-        "category": "monitor",
-        "status": "In Stock",
-        "rating": "4.4 out of 5",
-        "descriptions":"This 27.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate."
+      "individual_rating": "4.3 Out of 5 Stars",
+      "average_rating": "4.5 Out of 5 Stars",
+      "reviews": "superb processor",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    },
+    {
+      "id": "19",
+      "title": "LG 22MK600M-B 21.5 inch IPS Full HD LED Monitor",
+      "img": "https://i.ibb.co/h1tGcY4/lg-22mk600m-1-500x500.jpg",
+      "price": 14700,
+      "category": "monitor",
+      "status": "In Stock",
+      "rating": "4.4 out of 5",
+         "key_features": {
+        "model": "22MK600M",
+        "brand": "LG",
+        "resolution": "Full HD (1920 x 1080)",
+        "ports": "HDMI, VGA, 3.5mm Audio Out"
       },
-      {
-        "id": "20",
-        "title": "MSI PRO MP241X 23.8' 75Hz FHD Monitor",
-        "img": "https://i.ibb.co/Y8g67NZ/pro-mp241x-0001-500x500.png",
-        "price": 15200,
-        "category": "monitor",
-        "status": "In Stock",
-        "rating": "4.5 out of 5",
-        "descriptions":"This 22.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate."
+      "individual_rating": "4.3 Out of 5 Stars",
+      "average_rating": "4.5 Out of 5 Stars",
+      "reviews": "superb clean display",
+      "descriptions": "This 27.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate."
+    },
+    {
+      "id": "20",
+      "title": "MSI PRO MP241X 23.8' 75Hz FHD Monitor",
+      "img": "https://i.ibb.co/Y8g67NZ/pro-mp241x-0001-500x500.png",
+      "price": 15200,
+      "category": "monitor",
+      "status": "In Stock",
+      "rating": "4.5 out of 5",
+      "key_features": {
+        "model": "PRO MP241X",
+        "brand": "MSI",
+        "resolution": "FHD (1920 x 1080)",
+        "ports": "HDMI, D-Sub (VGA)"
       },
-      {
-        "id": "21",
-        "title": "Lian Li O11D EVO Vertical GPU Kit",
-        "img": "https://i.ibb.co/THCnYSB/o11d-evo-vertical-gpu-kit-01-500x500.webp",
-        "price": 6700,
-        "category": "other",
-        "status": "In Stock",
-        "rating": "4.3 out of 5",
-        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
-      }
-    ]
-  }
+      "individual_rating": "4.7 Out of 5 Stars",
+      "average_rating": "4.4 Out of 5 Stars",
+      "reviews": "superb. clean display",
+      "descriptions": "This 22.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate."
+    },
+    {
+      "id": "21",
+      "title": "Lian Li O11D EVO Vertical GPU Kit",
+      "img": "https://i.ibb.co/THCnYSB/o11d-evo-vertical-gpu-kit-01-500x500.webp",
+      "price": 6700,
+      "category": "other",
+      "status": "In Stock",
+      "rating": "4.3 out of 5",
+      "key_features": {
+        "model": "O11D EVO Vertical GPU Kit",
+        "brand": "Lian Li",
+        "resolution": "Vertical graphics card accessories for O11D EVO"
+      },
+      "individual_rating": "4.3 Out of 5 Stars",
+      "average_rating": "4.3 Out of 5 Stars",
+      "reviews": "superb",
+      "descriptions": "Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
+    }
+  ]
+}

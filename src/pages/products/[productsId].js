@@ -10,7 +10,19 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import Image from "next/image";
 
 const ProductDetailPage = ({ product }) => {
-  const { title, descriptions, img, price, status, category, rating } = product;
+  const {
+    title,
+    descriptions,
+    img,
+    price,
+    status,
+    category,
+    rating,
+    key_features,
+    individual_rating,
+    average_rating,
+    reviews,
+  } = product;
 
   return (
     <div
@@ -30,13 +42,49 @@ const ProductDetailPage = ({ product }) => {
           <div class="flex justify-center">
             <hr class="border-t-4 border-orange-600 w-full my-2" />
           </div>
-          <p>
-            <p className=" h-auto text-white">
-              descriptions: {descriptions}
+          <div>
+            <p className=" h-auto text-white">descriptions: {descriptions}</p>
+            <div className="flex justify-center items-center py-2 text-md">
+              <p className="text-white ">
+                <span className="text-orange-600">price:</span> {price}৳
+              </p>
+              <p className="text-white   ">
+                <span className="text-white">status:</span> {status}
+              </p>
+              <p className="text-white   ">
+                <span className="text-orange-600">brand:</span>{" "}
+                {key_features.brand}
+              </p>
+            </div>
+            <p className="text-white  text-md ">
+              {" "}
+              <span className="text-orange-600">individual_rating:</span>{" "}
+              {individual_rating}
             </p>
-            <p className="text-orange-600 py-2 text-xl">price: {price}৳</p>
-            <p className="text-white py-2 text-xl">status: {status}</p>
-            <div className="card-actions justify-start my-4">
+            <p className="text-white   text-md">
+              {" "}
+              <span className="text-orange-600">average_rating:</span>{" "}
+              {average_rating}
+            </p>
+
+            <div className="flex justify-center items-center pb-2 text-md">
+              <p className="text-white   ">
+                {" "}
+                <span className="text-orange-600">reviews:</span> {reviews}
+              </p>
+              <p className="text-white   ">
+                <span className="text-orange-600">model:</span>{" "}
+                {key_features.model}
+              </p>
+            </div>
+            <p className="text-white   text-md">
+              <span className="text-orange-600">resolution:</span>{" "}
+              {key_features.resolution}
+            </p>
+            <div class="flex justify-center text-md">
+              <hr class="border-t-4 border-orange-600 w-full my-2" />
+            </div>
+            <div className="card-actions justify-start my-2 text-md">
               <div className="badge badge-outline text-lime-300 p-4">
                 Category: {category}
               </div>
@@ -45,10 +93,12 @@ const ProductDetailPage = ({ product }) => {
                 Rating: {rating}
               </div>
             </div>
-          </p>
+          </div>
 
-          <div className="card-actions justify-end">
-            {/* <button className="btn ">Watch</button> */}
+          <div className="card-actions flex justify-center items-center">
+            <p className="text-white text-2xl">
+              <span className="text-orange-600 ">price:</span> {price}৳
+            </p>
             <button className="btn bg-orange-600 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
