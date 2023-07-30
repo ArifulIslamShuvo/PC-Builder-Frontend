@@ -7,7 +7,8 @@
         "price": 9800,
         "category": "monitor",
         "status": "In Stock",
-        "rating": "4 out of 5"
+        "rating": "4 out of 5",
+        "descriptions":"This 21.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate. It is equipped with AMD FreeSync technology to reduce screen tearing and stuttering, and it has a flicker-free design to help reduce eye strain."
       },
       {
         "id": "2",
@@ -16,7 +17,9 @@
         "price": 450,
         "category": "other",
         "status": "In Stock",
-        "rating": "4.3 out of 5"
+        "rating": "4.3 out of 5",
+        "descriptions": "This wired mouse features a 2X click function that allows you to double-click with a single click. It also has a 1000Hz polling rate for smooth cursor movement, and it is equipped with 4 DPI settings (800/1200/1600/2400) for different needs."
+    
       },
       {
         "id": "3",
@@ -25,7 +28,9 @@
         "price": 650,
         "category": "other",
         "status": "Out of Stock",
-        "rating": "4.3 out of 5"
+        "rating": "4.3 out of 5",
+        "descriptions": "This mini keyboard is a great portable keyboard for travel or use with a laptop. It is compact and lightweight, and it has a built-in touchpad for easy navigation. The keyboard also has 104 keys, including a full number pad, for a comfortable typing experience."
+    
       },
       {
         "id": "4",
@@ -34,7 +39,9 @@
         "price": 999,
         "category": "storage-device",
         "status": "In Stock",
-        "rating": "4.5 out of 5"
+        "rating": "4.5 out of 5",
+        "descriptions": "This 128GB USB pendrive is a great way to store your files and data. It is small and lightweight, making it easy to carry around, and it has a high transfer speed of up to 150MB/s. The pendrive is also USB 3.2 compatible, so you can take advantage of the latest high-speed data transfer technology."
+    
       },
       {
         "id": "5",
@@ -43,7 +50,8 @@
         "price": 7200,
         "category": "processor",
         "status": "Out of Stock",
-        "rating": "4 out of 5"
+        "rating": "4 out of 5",
+        "descriptions": "This processor is a great option for budget-minded gamers and PC builders. It features two cores and four threads, and it is equipped with Radeon Vega 3 graphics. The processor is also compatible with the latest AM4 socket motherboards, so you can easily upgrade your system in the future."
       },
       {
         "id": "6",
@@ -52,7 +60,8 @@
         "price": 8200,
         "category": "processor",
         "status": "In Stock",
-        "rating": "4.6 out of 5"
+        "rating": "4.6 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "7",
@@ -61,7 +70,8 @@
         "price": 8000,
         "category": "motherboard",
         "status": "In Stock",
-        "rating": "4.7 out of 5"
+        "rating": "4.7 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "8",
@@ -70,7 +80,8 @@
         "price": 8900,
         "category": "motherboard",
         "status": "In Stock",
-        "rating": "4.5 out of 5"
+        "rating": "4.5 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "9",
@@ -79,7 +90,8 @@
         "price": 7900,
         "category": "motherboard",
         "status": "In Stock",
-        "rating": "4.8 out of 5"
+        "rating": "4.8 out of 5",
+        "descriptions":""
       },
       {
         "id": "10",
@@ -88,7 +100,8 @@
         "price": 1500,
         "category": "ram",
         "status": "In Stock",
-        "rating": "4.3 out of 5"
+        "rating": "4.3 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "11",
@@ -97,7 +110,8 @@
         "price": 2700,
         "category": "ram",
         "status": "In Stock",
-        "rating": "4.7 out of 5"
+        "rating": "4.7 out of 5",
+        "descriptions":""
       },
       {
         "id": "12",
@@ -106,7 +120,8 @@
         "price": 3200,
         "category": "ram",
         "status": "Out of Stock",
-        "rating": "4 out of 5"
+        "rating": "4 out of 5",
+        "descriptions":""
       },
       {
         "id": "13",
@@ -115,7 +130,8 @@
         "price": 50000,
         "category": "Power Supply Unit",
         "status": "In Stock",
-        "rating": "4.6 out of 5"
+        "rating": "4.6 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "14",
@@ -125,6 +141,7 @@
         "category": "power-supply-unit",
         "status": "In Stock",
         "rating": "4.2 out of 5"
+        ,"descriptions":""
       },
       {
         "id": "15",
@@ -133,7 +150,8 @@
         "price": 36000,
         "category": "Power Supply Unit",
         "status": "Out of Stock",
-        "rating": "4 out of 5"
+        "rating": "4 out of 5",
+        "descriptions":""
       },
       {
         "id": "16",
@@ -142,7 +160,8 @@
         "price": 1100,
         "category": "storage-device",
         "status": "In Stock",
-        "rating": "4.5 out of 5"
+        "rating": "4.5 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "17",
@@ -151,7 +170,8 @@
         "price": 1270,
         "category": "storage-device",
         "status": "Out of Stock",
-        "rating": "4.5 out of 5"
+        "rating": "4.5 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "18",
@@ -160,7 +180,8 @@
         "price": 7000,
         "category": "processor",
         "status": "In Stock",
-        "rating": "4 out of 5"
+        "rating": "4 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       },
       {
         "id": "19",
@@ -169,7 +190,8 @@
         "price": 14700,
         "category": "monitor",
         "status": "In Stock",
-        "rating": "4.4 out of 5"
+        "rating": "4.4 out of 5",
+        "descriptions":"This 27.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate."
       },
       {
         "id": "20",
@@ -178,7 +200,8 @@
         "price": 15200,
         "category": "monitor",
         "status": "In Stock",
-        "rating": "4.5 out of 5"
+        "rating": "4.5 out of 5",
+        "descriptions":"This 22.5-inch monitor features a Full HD (1920x1080) resolution, a 16:9 aspect ratio, and a 75Hz refresh rate."
       },
       {
         "id": "21",
@@ -187,7 +210,8 @@
         "price": 6700,
         "category": "other",
         "status": "In Stock",
-        "rating": "4.3 out of 5"
+        "rating": "4.3 out of 5",
+        "descriptions":"Intel 10th Gen Core i3 10100F Processor: This processor is a great option for budget-minded gamers and PC builders. It features four cores and eight threads, and it has a base clock speed of 3.6GHz. The processor is also unlocked, so you can overclock it to get even better performance."
       }
     ]
   }
