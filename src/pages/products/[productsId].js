@@ -21,22 +21,22 @@ const ProductDetailPage = ({ product }) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="card lg:card-side shadow-xl md:w-[60%]">
+      <div className="card lg:card-side shadow-xl">
         <figure>
           <img src={img} alt="Album" />
         </figure>
-        <div className="card-body border border-t-2 border-lime-300 bg-lime-900 bg-opacity-75 w-52">
+        <div className="card-body border border-t-2 border-lime-300 bg-lime-900 bg-opacity-75 w-96">
           <h2 className="card-title text-gray-50">{title}</h2>
           <div class="flex justify-center">
             <hr class="border-t-4 border-orange-600 w-full my-2" />
           </div>
           <p>
-            <p className="w-[55%] h-auto text-white">
+            <p className=" h-auto text-white">
               descriptions: {descriptions}
             </p>
             <p className="text-orange-600 py-2 text-xl">price: {price}৳</p>
             <p className="text-white py-2 text-xl">status: {status}</p>
-            <div className="card-actions justify-start my-2">
+            <div className="card-actions justify-start my-4">
               <div className="badge badge-outline text-lime-300 p-4">
                 Category: {category}
               </div>
