@@ -16,83 +16,31 @@ const RootLayout = ({ children }) => {
   const items = [
     {
       key: "1",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com"
-        >
-          CPU / Processo
-        </a>
-      ),
+      label: <Link href="categories/processor">CPU / Processo</Link>,
     },
     {
       key: "2",
-      label: (
-        <Link
-          href="categories/motherboard"
-        >
-          Motherboard
-        </Link>
-      ),
+      label: <Link href="categories/motherboard">Motherboard</Link>,
     },
     {
       key: "3",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
-        >
-          RAM
-        </a>
-      ),
+      label: <Link href="ategories/ram">RAM</Link>,
     },
     {
       key: "4",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
-        >
-          Power Supply Unit
-        </a>
-      ),
+      label: <Link href="ategories/power-supply-unit">Power Supply Unit</Link>,
     },
     {
       key: "5",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
-        >
-          Storage Device
-        </a>
-      ),
+      label: <Link href="ategories/storage-device">Storage Device</Link>,
     },
     {
       key: "6",
-      label: (
-        <Link 
-          href="categories/monitor"
-        >
-          Monitor
-        </Link>
-      ),
+      label: <Link href="categories/monitor">Monitor</Link>,
     },
     {
       key: "7",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
-        >
-          Others
-        </a>
-      ),
+      label: <Link href="ategories/others">Others</Link>,
     },
   ];
 
@@ -117,27 +65,27 @@ const RootLayout = ({ children }) => {
             >
               PC-Builder
             </Link>
-          <Dropdown
-            menu={{
-              items,
-            }}
-            placement="bottomLeft"
-            arrow={{
-              pointAtCenter: true,
-            }}
-          >
-            <Button
-              style={{
-                color: "white",
-                backgroundColor: "#404040",
-                padding: "5px 10px",
-                borderRadius: "3px",
-                marginLeft: "10px",
+            <Dropdown
+              menu={{
+                items,
+              }}
+              placement="bottomLeft"
+              arrow={{
+                pointAtCenter: true,
               }}
             >
-              Categories
-            </Button>
-          </Dropdown>
+              <Button
+                style={{
+                  color: "white",
+                  backgroundColor: "#404040",
+                  padding: "5px 10px",
+                  borderRadius: "3px",
+                  marginLeft: "10px",
+                }}
+              >
+                Categories
+              </Button>
+            </Dropdown>
           </h1>
         </div>
         <Menu theme="dark" mode="vertical" className={styles.menu_items}>
