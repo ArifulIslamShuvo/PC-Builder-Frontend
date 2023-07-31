@@ -134,7 +134,7 @@ export const getStaticPaths = async () => {
   const products = await res.json();
 
   const paths = products.map((product) => ({
-    params: { productsId: product?.id },
+    params: { productsId: product?._id },
   }));
   return { paths, fallback: false };
 };

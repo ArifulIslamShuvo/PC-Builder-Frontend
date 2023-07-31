@@ -19,7 +19,7 @@ const AllProduct = ({ allProducts }) => {
             const { title, img, price, status, category, rating } = product;
             return (
               <>
-                <Link href={`/products/${product?.id}`}>
+                <Link href={`/products/${product?._id}`}>
                   <div className="card w-96  shadow-xl mb-4">
                     <figure>
                       <img src={img} width="auto" height="250px" alt="Shoes" />
