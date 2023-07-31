@@ -24,6 +24,7 @@ const ProductDetailPage = ({ product }) => {
     reviews,
   } = product;
 
+
   return (
     <div
       className="flex justify-center items-center p-32 h-screen bg-cover bg-center"
@@ -37,7 +38,7 @@ const ProductDetailPage = ({ product }) => {
         <figure>
           <img src={img} alt="Album" />
         </figure>
-        <div className="card-body border border-t-2 border-lime-300 bg-lime-900 bg-opacity-75 w-96">
+        <div className="card-body border border-t-2 border-lime-300 bg-lime-900 bg-opacity-75 w-96 p-10">
           <h2 className="card-title text-gray-50">{title}</h2>
           <div class="flex justify-center">
             <hr class="border-t-4 border-orange-600 w-full my-2" />
