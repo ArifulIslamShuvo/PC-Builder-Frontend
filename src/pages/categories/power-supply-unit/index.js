@@ -2,27 +2,25 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import Link from "next/link";
 import React from "react";
 
-function OthesPage({ allProducts }) {
+function powerSupplyUnitPage({ allProducts }) {
 
+ const powerSupply = allProducts?.filter((pro) => pro.category === "Power Supply Unit");
 
- const others = allProducts?.filter(
-  (p) =>p.category === "other" 
-);
 
 
   return (
     <>
       <div>
         <h2 className="text-center text-orange-600 text-3xl font-bold my-4">
-          All Others Products
+        power Supply
           <div class="flex justify-center">
             <hr class="border-t-4 border-gray-900 w-1/6 my-4" />
           </div>
         </h2>
       </div>
       <div className="grid grid-cols-3 gap-4 overflow-hidden">
-        {others &&
-          others?.map((product) => {
+        {powerSupply &&
+          powerSupply?.map((product) => {
             const { title, img, price, status, category, rating } = product;
             return (
               <>
@@ -58,9 +56,9 @@ function OthesPage({ allProducts }) {
   )
 }
 
-export default OthesPage;
+export default powerSupplyUnitPage;
 
-OthesPage.getLayout = function getLayout(page) {
+powerSupplyUnitPage.getLayout = function getLayout(page) {
     return <RootLayout>{page}</RootLayout>;
   };
 
