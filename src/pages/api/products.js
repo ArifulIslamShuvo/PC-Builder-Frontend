@@ -17,38 +17,24 @@ async function run(req, res) {
     await client.connect();
     const PcBuilderProductsCollection = client.db("PC-Builder").collection("products");
 
-    // if (req.method === "GET") {
-    //   const products = await PcBuilderProductsCollection.find({}).toArray();
-    //   res.send({ message: "success", status: 200, data: products });
-    // }
-
-    
-    // if (req.method === "GET") {
-    //   const productId = req.params.productId || req.query.id; // Get the product ID from the request parameters or the query parameters
-    //   const product = await PcBuilderProductsCollection.findOne({ _id: productId });
-    //   if (product) {
-    //     res.send({ message: "success", status: 200, data: product });
-    //   } else {
-    //     res.send({ message: "product not found", status: 404 });
-    //   }
-    // }
-
     if (req.method === "GET") {
-      // Get all products
       const products = await PcBuilderProductsCollection.find({}).toArray();
+      console.log(products);
       res.send({ message: "success", status: 200, data: products });
-    } else if (req.method === "GET" && req.query.id) {
-      // Get a single product by its ID
-      const productId = req.query.id; // Assuming you pass the product ID as a query parameter
-      const product = await PcBuilderProductsCollection.findOne({ id: productId });
+    }
+    
+    
+    if (req.method === "GET") {
+      const productId = req.params.productId || req.query.id; // Get the product ID from the request parameters or the query parameters
+      const product = await PcBuilderProductsCollection.findOne({ _id: productId });
       if (product) {
         res.send({ message: "success", status: 200, data: product });
       } else {
-        res.send({ message: "Product not found", status: 404 });
+        res.send({ message: "product not found", status: 404 });
       }
     }
-
-
+    
+    
     console.log(" database connected to MongoDB!");
   } finally {
 
