@@ -2,9 +2,9 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import Link from "next/link";
 import React from "react";
 
-function MonitorPage({ allProducts }) {
+function motherboardPage({ allProducts }) {
 
- const monitor = allProducts?.filter((pro) => pro.category === "monitor");
+ const Motherboard = allProducts?.filter((pro) => pro.category === "motherboard");
 
 
 
@@ -12,15 +12,15 @@ function MonitorPage({ allProducts }) {
     <>
       <div>
         <h2 className="text-center text-orange-600 text-3xl font-bold my-4">
-          All Monitor
+          All Motherboard
           <div class="flex justify-center">
             <hr class="border-t-4 border-gray-900 w-1/6 my-4" />
           </div>
         </h2>
       </div>
       <div className="grid grid-cols-3 gap-4 overflow-hidden">
-        {monitor &&
-          monitor?.map((product) => {
+        {Motherboard &&
+          Motherboard?.map((product) => {
             const { title, img, price, status, category, rating } = product;
             return (
               <>
@@ -56,9 +56,9 @@ function MonitorPage({ allProducts }) {
   )
 }
 
-export default MonitorPage;
+export default motherboardPage;
 
-MonitorPage.getLayout = function getLayout(page) {
+motherboardPage.getLayout = function getLayout(page) {
     return <RootLayout>{page}</RootLayout>;
   };
 
@@ -75,3 +75,5 @@ export const getStaticProps = async () => {
     revalidate: 10,
   };
 };
+
+
