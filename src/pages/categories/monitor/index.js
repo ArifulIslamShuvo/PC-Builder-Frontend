@@ -7,7 +7,6 @@ function MonitorPage({ allProducts }) {
  const monitor = allProducts?.filter((pro) => pro.category === "monitor");
 
 
-
   return (
     <>
       <div>
