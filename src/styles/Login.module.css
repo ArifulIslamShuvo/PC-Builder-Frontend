@@ -1,0 +1,58 @@
+.form{
+    width: 30%;
+    /* height: 380px; */
+    border-radius: 10px;
+    /* background: #090928; */
+    background: #469b98;
+    margin: 8% auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;;
+    box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    0 16px 32px rgba(0, 0, 0, 0.1),
+    0 32px 64px rgba(0, 0, 0, 0.1);
+}
+    
+
+.form form{
+    margin-top: 20px;
+}
+
+.form input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form button{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.social_icons{
+    width: 30%;
+    font-size: 40px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.vertica{
+    border-left: 2px solid rgb(255, 255, 255); 
+    height: 50px;   
+}
+.icon {
+    /* Set the initial scale of the icon */
+    transform: scale(1);
+    transition: transform 0.2s ease;
+  }
+  
+  .icon:hover {
+    /* Scale the icon to make it zoomed in on hover */
+    transform: scale(1.2);
+  }
+ 

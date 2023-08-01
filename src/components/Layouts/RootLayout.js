@@ -12,6 +12,8 @@ const { Header, Content, Footer } = Layout;
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 
+
+
 const RootLayout = ({ children }) => {
   const items = [
     {
@@ -56,16 +58,16 @@ const RootLayout = ({ children }) => {
           <h1>
             <Link
               href="/"
-              style={{
-                color: "white",
-                backgroundColor: "#404040",
-                padding: "5px 10px",
-                borderRadius: "3px",
-              }}
-            >
-              PC-Builder
+              >
+              <span className="text-3xl text-orange-600 pt-2">PC-Builder</span>
             </Link>
-            <Dropdown
+            
+          </h1>
+        </div>
+        <Menu theme="dark" mode="vertical" className={styles.menu_items}>
+         <div className="flex  items-center justify-center gap-3">
+          <item>
+         <Dropdown
               menu={{
                 items,
               }}
@@ -81,21 +83,44 @@ const RootLayout = ({ children }) => {
                   padding: "5px 10px",
                   borderRadius: "3px",
                   marginLeft: "10px",
+                  
                 }}
               >
                 Categories
               </Button>
             </Dropdown>
-          </h1>
-        </div>
-        <Menu theme="dark" mode="vertical" className={styles.menu_items}>
-          <Link href="/">
+          </item>
+          <div className={styles.vertica}> </div>
+         <Link href="/">
             <items className="flex  items-center justify-center gap-1">
-              <ProfileOutlined />
               All Product
             </items>
           </Link>
+          <div className={styles.vertica}> </div>
+         <Link href="/">
+            <items className="flex  items-center justify-center gap-1">
+              PC-BUILD
+            </items>
+          </Link>
+         </div>
         </Menu>
+        <Menu theme="" mode="vertical" className={styles.menu_items}>
+          <div className="flex  items-center justify-center gap-3">  
+          <Link href="/login">
+            <items className="flex  items-center justify-center gap-1">
+              <ProfileOutlined />
+             Sign-In
+            </items>
+          </Link>
+          <Link href="/">
+            <items className="flex  items-center justify-center gap-1">
+              <ProfileOutlined />
+             Sign-Out
+            </items>
+          </Link>
+          </div>
+        </Menu>
+        
       </Header>
 
       <Content

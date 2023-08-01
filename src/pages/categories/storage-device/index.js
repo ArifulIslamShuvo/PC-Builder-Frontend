@@ -1,21 +1,27 @@
+/* eslint-disable @next/next/no-img-element */
+import RootLayout from "@/components/Layouts/RootLayout";
 import Link from "next/link";
 import React from "react";
 
-const AllProduct = ({ allProducts }) => {
-  //   console.log(allProducts);
+function storageDevicePage({ allProducts }) {
+
+ const storage = allProducts?.filter((pro) => pro.category === "storage-device");
+
+
+
   return (
     <>
       <div>
         <h2 className="text-center text-orange-600 text-3xl font-bold my-4">
-          Featured Products
+        All Storage Devices 
           <div class="flex justify-center">
             <hr class="border-t-4 border-gray-900 w-1/6 my-4" />
           </div>
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-hidden">
-        {allProducts &&
-          allProducts?.map((product) => {
+      <div className="grid grid-cols-3 gap-4 overflow-hidden">
+        {storage &&
+          storage?.map((product) => {
             const { title, img, price, status, category, rating } = product;
             return (
               <>
@@ -48,13 +54,27 @@ const AllProduct = ({ allProducts }) => {
           })}
       </div>
     </>
-  );
+  )
+}
+
+export default storageDevicePage;
+
+storageDevicePage.getLayout = function getLayout(page) {
+    return <RootLayout>{page}</RootLayout>;
+  };
+
+  
+export const getStaticProps = async () => {
+  const res = await fetch("http://localhost:5000/products");
+  const data = await res.json();
+  // console.log(data);
+
+  return {
+    props: {
+      allProducts: data,
+    },
+    revalidate: 10,
+  };
 };
 
-export default AllProduct;
 
-/* 
-
-
-
-*/

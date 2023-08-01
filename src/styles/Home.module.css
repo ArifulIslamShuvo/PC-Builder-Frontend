@@ -16,3 +16,7 @@
     margin: 10px 0;
     background: #000;
 }
+.vertica{
+    border-left: 2px solid rgb(255, 255, 255); 
+    height: 40px;   
+}
