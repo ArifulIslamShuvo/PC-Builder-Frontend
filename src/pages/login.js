@@ -8,48 +8,48 @@ import { signIn, useSession } from 'next-auth/react';
 
 function NextAuth() {
   const { data: session } = useSession();
-  // console.log(session);
   return (
     <div>
       <Head>
         <title>Sign-In</title>
       </Head>
       <div className='flex justify-center items-center '>
-      <div className={styles.form}>
-        <p className='text-3xl'>LOGIN</p>
-        <div class="flex justify-center">
+        <div className={styles.form}>
+          <p className='text-3xl'>LOGIN</p>
+          <div class="flex justify-center">
             <hr class="border-t-2 border-black w-40 my-2" />
           </div>
-        <div className={styles.social_icons}>
-          <GoogleOutlined className={styles.icon}
-            onClick={() =>
-              signIn("google", {
-                callbackUrl: "http://localhost:3000/",
-              })
-            } />
-          <div className={styles.vertica}> </div>
-          <GithubOutlined className={styles.icon}
-            onClick={() =>
-              signIn("github", {
-                callbackUrl: "http://localhost:3000/",
-              })
-            } />
+          <div className={styles.social_icons}>
+            <GoogleOutlined className={styles.icon}
+              onClick={() =>
+                signIn("google", {
+                  callbackUrl: "http://localhost:3000/",
+                })
+              } />
+            <div className={styles.vertica}> </div>
+            <GithubOutlined className={styles.icon}
+              onClick={() =>
+                signIn("github", {
+                  callbackUrl: "http://localhost:3000/",
+                })
+              } />
+          </div>
+          <hr />
+          <form className='pb-2'>
+            <label htmlFor="">Your Email</label>
+            <input type="email" />
+            <label htmlFor="">Your Password</label>
+            <input type="password" />
+            <button className='btn-sn rounded-md bg-orange-600 py-1'>Login</button>
+          </form>
         </div>
-        <hr />
-        <form className='pb-2'>
-          <label htmlFor="">Your Email</label>
-          <input type="email" />
-          <label htmlFor="">Your Password</label>
-          <input type="password" />
-          <Button>Login</Button>
-        </form>
-      </div>
       </div>
     </div>
   )
 }
 
 export default NextAuth
+
 NextAuth.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };

@@ -1,7 +1,7 @@
 import {
   ProfileOutlined,
-  MobileOutlined,
-  UserOutlined,
+  LogoutOutlined,
+  LoginOutlined,
   FacebookFilled,
   LinkedinFilled,
   GoogleSquareFilled,
@@ -12,12 +12,10 @@ const { Header, Content, Footer } = Layout;
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import {signOut, useSession } from "next-auth/react";
-
-
+ 
 
 const RootLayout = ({ children }) => {
-  // const { data: session } = useSession();
-  // console.log(session);
+  const { data: session } = useSession();
 
   const items = [
     {
@@ -101,7 +99,7 @@ const RootLayout = ({ children }) => {
             </items>
           </Link>
           <div className={styles.vertica}> </div>
-         <Link href="/">
+         <Link href="/pc-builder">
             <items className="flex  items-center justify-center gap-1">
               PC-BUILD
             </items>
@@ -110,18 +108,19 @@ const RootLayout = ({ children }) => {
         </Menu>
         <Menu theme="" mode="vertical" className={styles.menu_items}>
           <div className="flex  items-center justify-center gap-3">  
-          <Link href="/login">
-            <items className="flex  items-center justify-center gap-1">
-              <ProfileOutlined />
+          {!session?.user?<Link href="/login">
+            <items className="flex  items-center justify-center gap-1  hover:scale-110 transform transition-transform duration-200 ease-in-out">
+            <LoginOutlined className="text-orange-600"/>
              Sign-In
             </items>
           </Link>
-          <Link href="" onClick={() => signOut()}>
-            <items className="flex  items-center justify-center gap-1">
-              <ProfileOutlined />
+          :<Link href="" onClick={() => signOut()}>
+            <items className="flex  items-center justify-center gap-1 hover:scale-110 transform transition-transform duration-200 ease-in-out">
+              <LogoutOutlined className="text-orange-600 "/> 
              Sign-Out
             </items>
           </Link>
+          }
           </div>
         </Menu>
         

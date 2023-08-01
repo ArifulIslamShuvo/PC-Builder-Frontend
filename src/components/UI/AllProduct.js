@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 
 const AllProduct = ({ allProducts }) => {
-  //   console.log(allProducts);
   return (
     <>
       <div>
@@ -36,10 +35,12 @@ const AllProduct = ({ allProducts }) => {
                           Category: {category}
                         </div>
                         <br />
-                        <div className="badge badge-outline text-indigo-700 py-2">
+                          <div className="badge badge-outline text-indigo-700 py-2">
                           Rating: {rating}
                         </div>
                       </div>
+                      <button className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
+                    
                     </div>
                   </div>
                 </Link>

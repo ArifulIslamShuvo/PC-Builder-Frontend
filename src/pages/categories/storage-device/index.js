@@ -19,7 +19,7 @@ function storageDevicePage({ allProducts }) {
           </div>
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-4 overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-hidden">
         {storage &&
           storage?.map((product) => {
             const { title, img, price, status, category, rating } = product;
@@ -42,10 +42,12 @@ function storageDevicePage({ allProducts }) {
                           Category: {category}
                         </div>
                         <br />
-                        <div className="badge badge-outline text-indigo-700 py-2">
+                          <div className="badge badge-outline text-indigo-700 py-2">
                           Rating: {rating}
                         </div>
                       </div>
+                      <button className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
+                    
                     </div>
                   </div>
                 </Link>
