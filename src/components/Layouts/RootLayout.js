@@ -11,10 +11,14 @@ import { Button, Dropdown, Layout, Menu } from "antd";
 const { Header, Content, Footer } = Layout;
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import {signOut, useSession } from "next-auth/react";
 
 
 
 const RootLayout = ({ children }) => {
+  // const { data: session } = useSession();
+  // console.log(session);
+
   const items = [
     {
       key: "1",
@@ -112,7 +116,7 @@ const RootLayout = ({ children }) => {
              Sign-In
             </items>
           </Link>
-          <Link href="/">
+          <Link href="" onClick={() => signOut()}>
             <items className="flex  items-center justify-center gap-1">
               <ProfileOutlined />
              Sign-Out
@@ -122,7 +126,6 @@ const RootLayout = ({ children }) => {
         </Menu>
         
       </Header>
-
       <Content
         style={{
           padding: "0 24px",

@@ -4,8 +4,11 @@ import { GoogleOutlined, GithubOutlined } from "@ant-design/icons";
 import Head from "next/head";
 import styles from "@/styles/Login.module.css";
 import RootLayout from '@/components/Layouts/RootLayout';
+import { signIn, useSession } from 'next-auth/react';
 
-function login() {
+function NextAuth() {
+  const { data: session } = useSession();
+  // console.log(session);
   return (
     <div>
       <Head>
@@ -18,9 +21,19 @@ function login() {
             <hr class="border-t-2 border-black w-40 my-2" />
           </div>
         <div className={styles.social_icons}>
-          <GoogleOutlined />
+          <GoogleOutlined className={styles.icon}
+            onClick={() =>
+              signIn("google", {
+                callbackUrl: "http://localhost:3000/",
+              })
+            } />
           <div className={styles.vertica}> </div>
-          <GithubOutlined />
+          <GithubOutlined className={styles.icon}
+            onClick={() =>
+              signIn("github", {
+                callbackUrl: "http://localhost:3000/",
+              })
+            } />
         </div>
         <hr />
         <form className='pb-2'>
@@ -32,12 +45,11 @@ function login() {
         </form>
       </div>
       </div>
-
     </div>
   )
 }
 
-export default login
-login.getLayout = function getLayout(page) {
+export default NextAuth
+NextAuth.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
