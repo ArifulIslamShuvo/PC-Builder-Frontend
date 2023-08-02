@@ -1,68 +1,123 @@
+/* eslint-disable @next/next/no-img-element */
 import RootLayout from '@/components/Layouts/RootLayout';
 import React from 'react'
-import { ShopOutlined,SaveOutlined } from "@ant-design/icons";
+import { ShopOutlined, SaveOutlined } from "@ant-design/icons";
+import styles from "@/styles/Pcbuilder.module.css";
+import icon1 from "../../assets/images/cpu.png"
+
 function PcBuilder() {
     return (
         <div className='flex justify-center items-center h-screen'>
-            <div class="container mx-auto order border-blue-500 border-2 w-96 md:w-[55%] p-10 ">
-                <header class="flex justify-between items-center border-blue-500 border-b pb-5">
-                    <h1 class="text-xl md:text-2xl font-bold text-orange-600">PC Builder</h1>
-                    <div class="flex gap-4">
-                        <div class="flex flex-col">
+            <div className="container mx-auto order border-blue-500 border-2 w-96 md:w-[55%] p-10 ">
+                <header className="flex justify-between items-center border-blue-500 border-b pb-5">
+                    <h1 className="text-xl md:text-2xl font-bold text-orange-600">PC Builder</h1>
+                    <div className="flex gap-4">
+                        <div className="flex flex-col">
                             <ShopOutlined className='text-orange-600 text-2xl' />
                             <p className='text-gray-900 font-bold'>Add to Cart</p>
                         </div>
-                        <div class="flex flex-col">
-                         <SaveOutlined className='text-orange-600 text-2xl' />
+                        <div className={styles.vertica}> </div>
+                        <div className="flex flex-col">
+                            <SaveOutlined className='text-orange-600 text-2xl' />
                             <p className='text-gray-900 font-bold'>Save PC</p>
                         </div>
                     </div>
                 </header>
-
-                <section class="mt-4">
-                    <h2 class="text-xl font-bold">CPU</h2>
-                    <ul class="dui-list dui-list-disc">
-                        <li>Intel Core i9-12900K</li>
-                        <li>AMD Ryzen 9 5950X</li>
-                        <li>AMD Ryzen 7 5800X</li>
-                    </ul>
-                </section>
-
-                <section class="mt-4">
-                    <h2 class="text-xl font-bold">GPU</h2>
-                    <ul class="dui-list dui-list-disc">
-                        <li>NVIDIA GeForce RTX 3080 Ti</li>
-                        <li>NVIDIA GeForce RTX 3070 Ti</li>
-                        <li>AMD Radeon RX 6800 XT</li>
-                    </ul>
-                </section>
-
-                <section class="mt-4">
-                    <h2 class="text-xl font-bold">RAM</h2>
-                    <ul class="dui-list dui-list-disc">
-                        <li>32GB DDR4-3200</li>
-                        <li>16GB DDR4-3200</li>
-                        <li>8GB DDR4-3200</li>
-                    </ul>
-                </section>
-
-                <section class="mt-4">
-                    <h2 class="text-xl font-bold">Storage</h2>
-                    <ul class="dui-list dui-list-disc">
-                        <li>1TB Samsung 980 Pro</li>
-                        <li>500GB Samsung 970 EVO Plus</li>
-                        <li>2TB Seagate Barracuda</li>
-                    </ul>
-                </section>
-
-                <section class="mt-4">
-                    <h2 class="text-xl font-bold">Total Price</h2>
-                    <div class="dui-collapse">
-                        <div class="dui-collapse-content">
-                            <p>The total price of your computer is \$3,000.</p>
+                {/* CPU Section */}
+                <section className="mt-4 flex border-l-orange-400 justify-between items-center border-blue-500 border-b pb-5">
+                    <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
+                        <img className='w-10 md:w-14' src="https://cdn-icons-png.flaticon.com/512/3716/3716484.png" alt='' />
+                        <div className="flex flex-col">
+                            <p className='text-gray-900 text-sm'>CPU<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
+                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
                         </div>
                     </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p className='text-black'>Price৳</p>
+                        <div className={`${styles.vertica} hidden md:block`}> </div>
+                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                    </div>
                 </section>
+                {/* Motherboard Section */}
+                <section className="mt-4 flex border-l-orange-400 justify-between items-center border-blue-500 border-b pb-5">
+                    <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
+                        <img className='w-10 md:w-14' src="https://cdn-icons-png.flaticon.com/512/2287/2287895.png" alt='' />
+                        <div className="flex flex-col">
+                            <p className='text-gray-900 text-sm'>Motherboard<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
+                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p className='text-black'>Price৳</p>
+                        <div className={`${styles.vertica} hidden md:block`}> </div>
+                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                    </div>
+                </section>
+                {/* Power Supply Section */}
+                <section className="mt-4 flex border-l-orange-400 justify-between items-center border-blue-500 border-b pb-5">
+                    <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
+                        <img className='w-10 md:w-14' src="https://cdn-icons-png.flaticon.com/512/7568/7568226.png" alt='' />
+                        <div className="flex flex-col">
+                            <p className='text-gray-900 text-sm'>Power-Supply-Unit<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
+                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p className='text-black'>Price৳</p>
+                        <div className={`${styles.vertica} hidden md:block`}> </div>
+                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                    </div>
+                </section>
+            
+                {/* RAM Section */}
+                <section className="mt-4 flex border-l-orange-400 justify-between items-center border-blue-500 border-b pb-5">
+                    <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
+                        <img className='w-10 md:w-14' src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-ram-icon-png-image_4015165.jpg" alt='' />
+                        <div className="flex flex-col">
+                            <p className='text-gray-900 text-sm'>RAM<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
+                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p className='text-black'>Price৳</p>
+                        <div className={`${styles.vertica} hidden md:block`}> </div>
+                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                    </div>
+                </section>
+
+                {/* Storage Section */}
+                <section className="mt-4 flex border-l-orange-400 justify-between items-center border-blue-500 border-b pb-5">
+                    <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
+                        <img className='w-10 md:w-14' src="https://cdn-icons-png.flaticon.com/512/3566/3566546.png" alt='' />
+                        <div className="flex flex-col">
+                            <p className='text-gray-900 text-sm'>Storage<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
+                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p className='text-black'>Price৳</p>
+                        <div className={`${styles.vertica} hidden md:block`}> </div>
+                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                    </div>
+                </section>
+
+                {/* Monitor Section */}
+                <section className="mt-4 flex border-l-orange-400 justify-between items-center border-blue-500 border-b pb-5">
+                    <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
+                        <img className='w-10 md:w-14' src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png" alt='' />
+                        <div className="flex flex-col">
+                            <p className='text-gray-900 text-sm'>Monitor<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
+                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p className='text-black'>Price৳</p>
+                        <div className={`${styles.vertica} hidden md:block`}> </div>
+                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                    </div>
+                </section>
+
+
             </div>
         </div>
     )

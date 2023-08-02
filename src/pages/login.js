@@ -16,8 +16,8 @@ function NextAuth() {
       <div className='flex justify-center items-center '>
         <div className={styles.form}>
           <p className='text-3xl'>LOGIN</p>
-          <div class="flex justify-center">
-            <hr class="border-t-2 border-black w-40 my-2" />
+          <div className="flex justify-center">
+            <hr className="border-t-2 border-black w-40 my-2" />
           </div>
           <div className={styles.social_icons}>
             <GoogleOutlined className={styles.icon}

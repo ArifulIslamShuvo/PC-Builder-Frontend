@@ -7,8 +7,8 @@ const AllProduct = ({ allProducts }) => {
       <div>
         <h2 className="text-center text-orange-600 text-3xl font-bold my-4">
           Featured Products
-          <div class="flex justify-center">
-            <hr class="border-t-4 border-gray-900 w-1/6 my-4" />
+          <div className="flex justify-center">
+            <hr className="border-t-4 border-gray-900 w-1/6 my-4" />
           </div>
         </h2>
       </div>
