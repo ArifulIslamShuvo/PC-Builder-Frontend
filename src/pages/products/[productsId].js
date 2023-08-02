@@ -27,7 +27,7 @@ const ProductDetailPage = ({ product }) => {
 
   return (
     <div
-      className="flex justify-center items-center p-32 h-screen bg-cover bg-center"
+      className="flex justify-center items-center p-32 bg-cover bg-center"
       style={{
         backgroundImage: `url(${img})`,
         backgroundSize: "cover",

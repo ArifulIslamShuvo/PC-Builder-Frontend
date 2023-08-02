@@ -11,8 +11,9 @@ import { Button, Dropdown, Layout, Menu } from "antd";
 const { Header, Content, Footer } = Layout;
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import {signOut, useSession } from "next-auth/react";
- 
+import { signOut, useSession } from "next-auth/react";
+import Navbar from "./Navbar";
+
 
 const RootLayout = ({ children }) => {
   const { data: session } = useSession();
@@ -50,7 +51,7 @@ const RootLayout = ({ children }) => {
 
   return (
     <Layout>
-      <Header
+      {/* <Header
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -60,71 +61,74 @@ const RootLayout = ({ children }) => {
           <h1>
             <Link
               href="/"
-              >
+            >
               <span className="text-3xl text-orange-600 pt-2">PC-Builder</span>
             </Link>
-            
+
           </h1>
         </div>
         <Menu theme="dark" mode="vertical" className={styles.menu_items}>
-         <div className="flex  items-center justify-center gap-3">
-          <item>
-         <Dropdown
-              menu={{
-                items,
-              }}
-              placement="bottomLeft"
-              arrow={{
-                pointAtCenter: true,
-              }}
-            >
-              <Button
-                style={{
-                  color: "white",
-                  backgroundColor: "#404040",
-                  padding: "5px 10px",
-                  borderRadius: "3px",
-                  marginLeft: "10px",
-                  
+          <div className="flex items-center justify-center gap-3">
+            <item>
+              <Dropdown
+                menu={{
+                  items,
+                }}
+                placement="bottomLeft"
+                arrow={{
+                  pointAtCenter: true,
                 }}
               >
-                Categories
-              </Button>
-            </Dropdown>
-          </item>
-          <div className={styles.vertica}> </div>
-         <Link href="/">
-            <items className="flex  items-center justify-center gap-1">
-              All Product
-            </items>
-          </Link>
-          <div className={styles.vertica}> </div>
-         <Link href="/pc-builder">
-            <items className="flex  items-center justify-center gap-1">
-              PC-BUILD
-            </items>
-          </Link>
-         </div>
-        </Menu>
-        <Menu theme="" mode="vertical" className={styles.menu_items}>
-          <div className="flex  items-center justify-center gap-3">  
-          {!session?.user?<Link href="/login">
-            <items className="flex  items-center justify-center gap-1  hover:scale-110 transform transition-transform duration-200 ease-in-out">
-            <LoginOutlined className="text-orange-600"/>
-             Sign-In
-            </items>
-          </Link>
-          :<Link href="" onClick={() => signOut()}>
-            <items className="flex  items-center justify-center gap-1 hover:scale-110 transform transition-transform duration-200 ease-in-out">
-              <LogoutOutlined className="text-orange-600 "/> 
-             Sign-Out
-            </items>
-          </Link>
-          }
+                <Button
+                  style={{
+                    color: "white",
+                    backgroundColor: "#404040",
+                    padding: "5px 10px",
+                    borderRadius: "3px",
+                    marginLeft: "10px",
+
+                  }}
+                >
+                  Categories
+                </Button>
+              </Dropdown>
+            </item>
+            <div className={styles.vertica}> </div>
+            <Link href="/">
+              <items className="flex  items-center justify-center gap-1">
+                All Product
+              </items>
+            </Link>
+            <div className={styles.vertica}> </div>
+            <Link href="/pc-builder">
+              <items className="flex  items-center justify-center gap-1">
+                PC-BUILD
+              </items>
+            </Link>
           </div>
         </Menu>
-        
-      </Header>
+        <Menu theme="" mode="vertical" className={styles.menu_items}>
+          <div className="flex  items-center justify-center gap-3">
+            {!session?.user ? <Link href="/login">
+              <items className="flex  items-center justify-center gap-1  hover:scale-110 transform transition-transform duration-200 ease-in-out">
+                <LoginOutlined className="text-orange-600" />
+                Sign-In
+              </items>
+            </Link>
+              : <Link href="" onClick={() => signOut()}>
+                <items className="flex  items-center justify-center gap-1 hover:scale-110 transform transition-transform duration-200 ease-in-out">
+                  <LogoutOutlined className="text-orange-600 " />
+                  Sign-Out
+                </items>
+              </Link>
+            }
+          </div>
+        </Menu>
+
+      </Header> */}
+
+      <Navbar />
+
       <Content
         style={{
           padding: "0 24px",
