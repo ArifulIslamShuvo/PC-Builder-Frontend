@@ -3,13 +3,15 @@ import Link from "next/link";
 import React from "react";
 
 function OthesPage({ allProducts }) {
-
-
+  
  const others = allProducts?.filter(
   (p) =>p.category === "other" 
 );
 
+const handleAddToPCBuild = (product) => {
+  
 
+};
   return (
     <>
       <div>

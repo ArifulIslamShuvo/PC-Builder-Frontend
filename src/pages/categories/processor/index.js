@@ -1,12 +1,23 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import RootLayout from "@/components/Layouts/RootLayout";
+import { useAppDispatch } from "@/redux/features/hook";
+import { addToPcBuilder } from "@/redux/features/pc-build/pc-builderCardSlice";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
+import { toast } from "react-toastify";
 
 function processorPage({ allProducts }) {
-
+  const dispatch = useAppDispatch();
+  const router = useRouter();
  const processor = allProducts?.filter((pro) => pro.category === "processor");
 
+ const handleAddToPCBuild = (product) => {
+  dispatch(addToPcBuilder({ category: 'cpu', product }));
+  toast.success('Product Added');
+  router.push('/pc-builder');
 
+};
 
   return (
     <>
@@ -44,7 +55,7 @@ function processorPage({ allProducts }) {
                           Rating: {rating}
                         </div>
                       </div>
-                      <button className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
+                      <button onClick={() => handleAddToPCBuild(product)} className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
                     
                     </div>
                   </div>

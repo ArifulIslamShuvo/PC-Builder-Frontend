@@ -13,8 +13,6 @@ function MonitorPage({ allProducts }) {
   const monitor = allProducts?.filter((pro) => pro.category === "monitor");
 
   const handleAddToPCBuild = (product) => {
-    console.log(product);
-    // dispatch(addToPcBuilder(product));
     dispatch(addToPcBuilder({ category: 'monitor', product }));
     toast.success('Product Added');
     router.push('/pc-builder');

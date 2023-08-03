@@ -1,13 +1,25 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
 import RootLayout from "@/components/Layouts/RootLayout";
+import { useAppDispatch } from "@/redux/features/hook";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
+import { toast } from "react-toastify";
+import { addToPcBuilder } from "@/redux/features/pc-build/pc-builderCardSlice";
 
 function storageDevicePage({ allProducts }) {
+  const dispatch = useAppDispatch();
+  const router = useRouter();
 
  const storage = allProducts?.filter((pro) => pro.category === "storage-device");
 
+ const handleAddToPCBuild = (product) => {
+  dispatch(addToPcBuilder({ category: 'storage', product }));
+  toast.success('Product Added');
+  router.push('/pc-builder');
 
+};
 
   return (
     <>
@@ -45,7 +57,7 @@ function storageDevicePage({ allProducts }) {
                           Rating: {rating}
                         </div>
                       </div>
-                      <button className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
+                      <button onClick={() => handleAddToPCBuild(product)} className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
                     
                     </div>
                   </div>
