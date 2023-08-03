@@ -1,12 +1,24 @@
 import RootLayout from "@/components/Layouts/RootLayout";
-import { Button } from "antd";
+import { useAppDispatch } from "@/redux/features/hook";
+import { addToPcBuilder } from "@/redux/features/pc-build/pc-builderCardSlice";
+
 import Link from "next/link";
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import { useRouter } from "next/router";
 
 function MonitorPage({ allProducts }) {
+  const router = useRouter();
+  const dispatch = useAppDispatch();
+  const monitor = allProducts?.filter((pro) => pro.category === "monitor");
 
- const monitor = allProducts?.filter((pro) => pro.category === "monitor");
+  const handleAddToPCBuild = (product) => {
+    console.log(product);
+    dispatch(addToPcBuilder(product));
+    toast.success('Product Added');
+    router.push('/pc-builder');
 
+  };
 
   return (
     <>
@@ -24,7 +36,6 @@ function MonitorPage({ allProducts }) {
             const { title, img, price, status, category, rating } = product;
             return (
               <>
-                <Link href={`/products/${product?._id}`}>
                   <div className="card w-96  shadow-xl mb-4">
                     <figure>
                       <img src={img} width="auto" height="250px" alt="Shoes" />
@@ -41,17 +52,17 @@ function MonitorPage({ allProducts }) {
                           Category: {category}
                         </div>
                         <br />
-                          <div className="badge badge-outline text-indigo-700 py-2">
+                        <div className="badge badge-outline text-indigo-700 py-2">
                           Rating: {rating}
                         </div>
                       </div>
-                      <button className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
-                     </div>
+                      <button onClick={() => handleAddToPCBuild(product)} className="w-full btn-sm text-white text-xl rounded-md bg-orange-600">ADD TO PC-BUILD</button>
+                    </div>
                   </div>
-                </Link>
               </>
             );
           })}
+        <ToastContainer />
       </div>
     </>
   )
@@ -60,12 +71,12 @@ function MonitorPage({ allProducts }) {
 export default MonitorPage;
 
 MonitorPage.getLayout = function getLayout(page) {
-    return <RootLayout>{page}</RootLayout>;
-  };
+  return <RootLayout>{page}</RootLayout>;
+};
 
-  
+
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/products");
+  const res = await fetch("https://pc-builder-backend-delta.vercel.app/products");
   const data = await res.json();
   // console.log(data);
 

@@ -67,7 +67,7 @@ storageDevicePage.getLayout = function getLayout(page) {
 
   
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/products");
+  const res = await fetch("https://pc-builder-backend-delta.vercel.app/products");
   const data = await res.json();
   // console.log(data);
 

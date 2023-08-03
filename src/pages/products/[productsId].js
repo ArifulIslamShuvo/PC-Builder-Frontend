@@ -130,7 +130,7 @@ ProductDetailPage.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:5000/products`);
+  const res = await fetch(`https://pc-builder-backend-delta.vercel.app/products`);
   const products = await res.json();
 
   const paths = products.map((product) => ({
@@ -142,7 +142,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `http://localhost:5000/products/${params?.productsId}`
+    `https://pc-builder-backend-delta.vercel.app/products/${params?.productsId}`
   );
   const data = await res.json();
   // console.log(data);

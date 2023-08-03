@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import RootLayout from '@/components/Layouts/RootLayout';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ShopOutlined, SaveOutlined } from "@ant-design/icons";
 import styles from "@/styles/Pcbuilder.module.css";
 import icon1 from "../../assets/images/cpu.png"
+import Link from 'next/link';
+import { useAppSelector } from '@/redux/features/hook';
 
-function PcBuilder() {
+function PcBuilder({ productData }) {
+    const products = useAppSelector(state => state.cart?.products);
+
+
     return (
         <div className='flex justify-center items-centerm mt-2 md:mt-20'>
             <div className="container mx-auto order border-blue-500 border-2 w-96 md:w-[55%] p-10 ">
@@ -25,9 +30,12 @@ function PcBuilder() {
                 </header>
 
                 {/* CPU Section */}
+
                 <section className="pt-4 flex flex-col md:flex-row justify-between items-center border-blue-500 border-b pb-5">
                     <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
-                        <img className='w-16' src="https://cdn-icons-png.flaticon.com/512/3716/3716484.png" alt='' />
+                        
+                            <img className='w-16' src="https://cdn-icons-png.flaticon.com/512/3716/3716484.png" alt='' />
+                        
                         <div className="flex flex-col">
                             <p className='text-gray-900 text-sm'>CPU<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
                             <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
@@ -36,9 +44,13 @@ function PcBuilder() {
                     <div className="flex flex-col md:flex-row items-center gap-4">
                         <p className='text-black'>Price৳</p>
                         <div className={`${styles.vertica} hidden md:block`}> </div>
-                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        <Link href="categories/processor">
+                            <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        </Link>
                     </div>
                 </section>
+
+
                 {/* Motherboard Section */}
                 <section className="pt-4 flex flex-col md:flex-row justify-between items-center border-blue-500 border-b pb-5">
                     <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
@@ -51,7 +63,9 @@ function PcBuilder() {
                     <div className="flex flex-col md:flex-row items-center gap-4">
                         <p className='text-black'>Price৳</p>
                         <div className={`${styles.vertica} hidden md:block`}> </div>
-                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        <Link href="/categories/motherboard">
+                            <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        </Link>
                     </div>
                 </section>
                 {/* Power Supply Section */}
@@ -69,7 +83,7 @@ function PcBuilder() {
                         <button className="btn  btn-outline btn-primary px-7">Choose</button>
                     </div>
                 </section>
-            
+
                 {/* RAM Section */}
                 <section className="pt-4 flex flex-col md:flex-row justify-between items-center border-blue-500 border-b pb-5">
                     <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
@@ -82,7 +96,9 @@ function PcBuilder() {
                     <div className="flex flex-col md:flex-row items-center gap-4">
                         <p className='text-black'>Price৳</p>
                         <div className={`${styles.vertica} hidden md:block`}> </div>
-                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        <Link href="/categories/ram">
+                            <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        </Link>
                     </div>
                 </section>
 
@@ -98,7 +114,9 @@ function PcBuilder() {
                     <div className="flex flex-col md:flex-row items-center gap-4">
                         <p className='text-black'>Price৳</p>
                         <div className={`${styles.vertica} hidden md:block`}> </div>
-                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        <Link href="/categories/storage-device">
+                            <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        </Link>
                     </div>
                 </section>
 
@@ -114,7 +132,9 @@ function PcBuilder() {
                     <div className="flex flex-col md:flex-row items-center gap-4">
                         <p className='text-black'>Price৳</p>
                         <div className={`${styles.vertica} hidden md:block`}> </div>
-                        <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        <Link href="/categories/monitor">
+                            <button className="btn  btn-outline btn-primary px-7">Choose</button>
+                        </Link>
                     </div>
                 </section>
 
@@ -127,3 +147,14 @@ export default PcBuilder
 PcBuilder.getLayout = function getLayout(page) {
     return <RootLayout>{page}</RootLayout>;
 };
+
+export const getStaticProps = async () => {
+    const res = await fetch("https://pc-builder-backend-delta.vercel.app/products");
+    const data = await res.json();
+
+    return {
+        props: {
+            productData: data,
+        },
+    };
+}
