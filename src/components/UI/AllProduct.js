@@ -12,7 +12,7 @@ const AllProduct = ({ allProducts }) => {
           </div>
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-hidden">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 overflow-hidden">
         {allProducts &&
           allProducts?.map((product) => {
             const { title, img, price, status, category, rating } = product;
@@ -54,8 +54,4 @@ const AllProduct = ({ allProducts }) => {
 
 export default AllProduct;
 
-/* 
 
-
-
-*/

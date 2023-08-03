@@ -1,15 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  products: [],
+  cpu: [],
+  motherboard: [],
+  ram: [],
+  powerSupply: [],
+  storage: [],
+  monitor: [],
 };
 
 export const pcBuildSlice = createSlice({
-  name: "cart",
+  name: "pcBuilder",
   initialState,
   reducers: {
     addToPcBuilder: (state, action) => {
-      state.products.push(action.payload);
+      const { category, product } = action.payload;
+      state[category].push(product);
     },
   },
 });
