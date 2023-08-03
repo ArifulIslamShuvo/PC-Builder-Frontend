@@ -1,13 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { Col, Row } from "antd";
-import {
-  UserOutlined,
-  CalendarOutlined,
-  CommentOutlined,
-  ProfileOutlined,
-} from "@ant-design/icons";
+
 import RootLayout from "@/components/Layouts/RootLayout";
-import Image from "next/image";
 
 const ProductDetailPage = ({ product }) => {
   const {
@@ -130,7 +123,7 @@ ProductDetailPage.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`https://pc-builder-backend-delta.vercel.app/products`);
+  const res = await fetch(`https://pc-builder-backend-mu.vercel.app/products`);
   const products = await res.json();
 
   const paths = products.map((product) => ({
@@ -142,7 +135,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `https://pc-builder-backend-delta.vercel.app/products/${params?.productsId}`
+    `https://pc-builder-backend-mu.vercel.app/products/${params?.productsId}`
   );
   const data = await res.json();
   // console.log(data);

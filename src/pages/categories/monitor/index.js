@@ -76,7 +76,7 @@ MonitorPage.getLayout = function getLayout(page) {
 
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://pc-builder-backend-delta.vercel.app/products");
+  const res = await fetch("https://pc-builder-backend-mu.vercel.app/products");
   const data = await res.json();
   // console.log(data);
 

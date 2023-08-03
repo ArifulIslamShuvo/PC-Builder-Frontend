@@ -24,7 +24,6 @@ function processorPage({ allProducts }) {
             const { title, img, price, status, category, rating } = product;
             return (
               <>
-                <Link href={`/products/${product?._id}`}>
                   <div className="card w-96  shadow-xl mb-4">
                     <figure>
                       <img src={img} width="auto" height="250px" alt="Shoes" />
@@ -49,7 +48,6 @@ function processorPage({ allProducts }) {
                     
                     </div>
                   </div>
-                </Link>
               </>
             );
           })}
@@ -66,7 +64,7 @@ processorPage.getLayout = function getLayout(page) {
 
   
 export const getStaticProps = async () => {
-  const res = await fetch("https://pc-builder-backend-delta.vercel.app/products");
+  const res = await fetch("https://pc-builder-backend-mu.vercel.app/products");
   const data = await res.json();
   // console.log(data);
 

@@ -1,12 +1,14 @@
 import Head from "next/head";
 import RootLayout from "@/components/Layouts/RootLayout";
 import AllProduct from "@/components/UI/AllProduct";
+import Banner from "@/components/UI/Banner";
 
 
 const HomePage = ({allProducts}) => {
   // console.log(allProducts);
   return (
     <>
+    <Banner />
       <Head>
         <title>PC-Builder</title>
         <meta
@@ -31,7 +33,7 @@ HomePage.getLayout = function getLayout(page) {
 
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://pc-builder-backend-delta.vercel.app/products");
+  const res = await fetch("https://pc-builder-backend-mu.vercel.app/products");
   const data = await res.json();
   // console.log(data);
 
@@ -40,5 +42,5 @@ export const getStaticProps = async () => {
       allProducts: data,
     },
     revalidate: 10,
-  };
+  }; 
 };
