@@ -8,8 +8,9 @@ import Link from 'next/link';
 import { useAppSelector } from '@/redux/features/hook';
 
 function PcBuilder({ productData }) {
-    const products = useAppSelector(state => state.cart?.products);
-
+    const products = useAppSelector(state => state.addToBuild);
+    console.log("🚀 ~ file: pcBuild.js:11 ~ PcBuild ~ products:", products);
+console.log(products);
 
     return (
         <div className='flex justify-center items-centerm mt-2 md:mt-20'>
@@ -33,9 +34,9 @@ function PcBuilder({ productData }) {
 
                 <section className="pt-4 flex flex-col md:flex-row justify-between items-center border-blue-500 border-b pb-5">
                     <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
-                        
-                            <img className='w-16' src="https://cdn-icons-png.flaticon.com/512/3716/3716484.png" alt='' />
-                        
+
+                        <img className='w-16' src="https://cdn-icons-png.flaticon.com/512/3716/3716484.png" alt='' />
+
                         <div className="flex flex-col">
                             <p className='text-gray-900 text-sm'>CPU<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
                             <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
@@ -123,18 +124,33 @@ function PcBuilder({ productData }) {
                 {/* Monitor Section */}
                 <section className="mt-4 flex flex-col md:flex-row justify-between items-center border-blue-500 border-b pb-5">
                     <div className='flex flex-col md:flex-row items-center justify-start gap-3'>
-                        <img className='w-16' src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png" alt='' />
+                        {!products?.monitor.length > 0 ?<img className='w-16' src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png" alt='' />
+                        :<img className='w-16' src={products?.monitor[0]?.img} alt='' />}
                         <div className="flex flex-col">
-                            <p className='text-gray-900 text-sm'>Monitor<span className='bg-gray-600 ml-1 px-1 text-white'>Required</span></p>
-                            <p className='text-gray-900 text-sm'>AMD Athlon 200GE AM4 Socket Desktop Processor with Radeon</p>
+                            <p className='text-gray-900 text-sm'>
+                                Monitor
+                                <span className='bg-gray-600 ml-1 px-1 text-white'>
+                                    Required
+                                </span>
+                            </p>
+                            <p className='text-gray-900 text-sm'>{products?.monitor[0]?.title}</p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row items-center gap-4">
-                        <p className='text-black'>Price৳</p>
-                        <div className={`${styles.vertica} hidden md:block`}> </div>
-                        <Link href="/categories/monitor">
-                            <button className="btn  btn-outline btn-primary px-7">Choose</button>
-                        </Link>
+                         <p className='text-black'>Price{products?.monitor[0]?.price}৳</p>
+                       
+                        <div className={` hidden md:block`}> </div>
+                        {products?.monitor.length > 0 ? (
+                            <button className="btn  btn-outline btn-success px-7">
+                                Selected
+                            </button>
+                        ) : (
+                            <Link href="/categories/monitor">
+                                <button className="btn  btn-outline btn-primary px-7">
+                                    Choose
+                                </button>
+                            </Link>
+                        )}
                     </div>
                 </section>
 
