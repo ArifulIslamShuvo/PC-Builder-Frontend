@@ -7,11 +7,11 @@ import {
   GoogleSquareFilled,
   TwitterSquareFilled,
 } from "@ant-design/icons";
-import { Button, Dropdown, Layout, Menu } from "antd";
-const { Header, Content, Footer } = Layout;
+import { Layout } from "antd";
+const { Content, Footer } = Layout;
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Navbar from "./Navbar";
 
 

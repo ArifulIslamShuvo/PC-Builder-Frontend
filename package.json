@@ -1,5 +1,5 @@
 {
-  "name": "ph-news-portal",
+  "name": "pc-builder",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -29,6 +29,7 @@
     "autoprefixer": "^10.4.14",
     "daisyui": "^3.5.0",
     "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "vercel": "^31.2.2"
   }
 }

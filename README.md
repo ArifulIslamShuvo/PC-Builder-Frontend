@@ -1,10 +1,10 @@
 ## PC-BUILDE
 
-* Frontend Live Link: 
+* Frontend Live Link: https://pc-bulid-frontend-arifulislamshuvo.vercel.app
 
-* Frontend Github Repository Link: 
+* Frontend Github Repository Link: https://github.com/ArifulIslamShuvo/PC-Builder-Frontend
 
-* Backend Code Live Link: 
+* Backend Code Live Link: https://pc-builder-backend-mu.vercel.app/products 
 
 ### Features the app:
 * Show random product.

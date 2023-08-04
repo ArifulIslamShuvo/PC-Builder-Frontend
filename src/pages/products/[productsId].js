@@ -134,15 +134,23 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { params } = context;
-  const res = await fetch(
-    `https://pc-builder-backend-mu.vercel.app/products/${params?.productsId}`
-  );
-  const data = await res.json();
-  // console.log(data);
 
-  return {
-    props: {
-      product: data,
-    },
-  };
+  try {
+    const res = await fetch(
+      `https://pc-builder-backend-mu.vercel.app/products/${params?.productsId}`
+    );
+    const data = await res.json();
+
+    return {
+      props: {
+        product: data,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      notFound: true, 
+    };
+  }
 };
+

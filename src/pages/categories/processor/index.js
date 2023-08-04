@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/rules-of-hooks */
 import RootLayout from "@/components/Layouts/RootLayout";
 import { useAppDispatch } from "@/redux/features/hook";

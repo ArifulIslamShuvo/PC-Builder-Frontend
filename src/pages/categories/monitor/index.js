@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import RootLayout from "@/components/Layouts/RootLayout";
 import { useAppDispatch } from "@/redux/features/hook";
 import { addToPcBuilder } from "@/redux/features/pc-build/pc-builderCardSlice";
 
-import Link from "next/link";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";

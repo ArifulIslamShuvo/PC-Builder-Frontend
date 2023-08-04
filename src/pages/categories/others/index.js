@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import RootLayout from "@/components/Layouts/RootLayout";
-import Link from "next/link";
 import React from "react";
 
 function OthesPage({ allProducts }) {

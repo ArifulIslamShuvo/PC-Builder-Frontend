@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import RootLayout from '@/components/Layouts/RootLayout';
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import { ShopOutlined, SaveOutlined } from "@ant-design/icons";
 import styles from "@/styles/Pcbuilder.module.css";
-import icon1 from "../../assets/images/cpu.png"
 import Link from 'next/link';
 import { useAppSelector } from '@/redux/features/hook';
 
