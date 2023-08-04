@@ -59,17 +59,16 @@ function Navbar() {
                                 pointAtCenter: true,
                             }}
                         >
-                           
+
                             <button className="text-white w-full flex items-center gap-3">
-                                    <p> Categories</p>
-                                    <DownOutlined />
-                                </button>
+                                <p> Categories</p>
+                                <DownOutlined />
+                            </button>
                         </Dropdown></>
 
                         <Link href="/">
                             <Button className="text-white w-full mt-2">
-                                All Product
-                            </Button>
+                                Home-Page                            </Button>
                         </Link>
                         <Link href="/pc-builder">
                             <Button className="text-white w-full mt-2">
@@ -86,27 +85,28 @@ function Navbar() {
                 <ul className="menu menu-horizontal px-1">
                     <div className="flex items-center justify-center gap-3">
                         <item>
-                            <Dropdown
-                                menu={{
-                                    items,
-                                }}
-                                placement="bottomLeft"
-                                arrow={{
-                                    pointAtCenter: true,
-                                }}
-                            >
-                                <button className="text-white text-xl flex items-center gap-2 hover:scale-110 transform transition-transform duration-200 ease-in-out">
-                                    <p> Categories</p>
-                                    <DownOutlined />
-                                </button>
-                            </Dropdown>
+
+                            <Link href="/">
+                                <buttonr className="text-white text-xl  hover:scale-110 transform transition-transform duration-200 ease-in-out">
+                                    Home-Page
+                                </buttonr>
+                            </Link>
                         </item>
                         <div className={styles.vertica}> </div>
-                        <Link href="/">
-                            <button className="text-white text-xl  hover:scale-110 transform transition-transform duration-200 ease-in-out">
-                                All Product
+                        <Dropdown
+                            menu={{
+                                items,
+                            }}
+                            placement="bottomLeft"
+                            arrow={{
+                                pointAtCenter: true,
+                            }}
+                        >
+                            <button className="text-white text-xl flex items-center gap-2 hover:scale-110 transform transition-transform duration-200 ease-in-out">
+                                <p> Categories</p>
+                                <DownOutlined />
                             </button>
-                        </Link>
+                        </Dropdown>
                         <div className={styles.vertica}> </div>
                         <Link href="/pc-builder">
                             <button className="text-white text-xl  hover:scale-110 transform transition-transform duration-200 ease-in-out">

@@ -1,15 +1,26 @@
-## Getting Started
+## PC-BUILDE
 
-Clone This Starter File
+* Frontend Live Link: 
 
-Then, run 
-```bash
-npm install
-#or
-npm i
+* Frontend Github Repository Link: 
 
-After that, run the development server:
+* Backend Code Live Link: 
 
-```bash
-npm run dev
-
+### Features the app:
+* Show random product.
+* View single product details page.
+* Implement Redux-toolkit state * management.
+* SSG implement.
+* SSR implement.
+* Register and Login user with Google and Github.
+* Make PC Builder your custom PC.
+### Using languages and tools
+* Next Js, React.
+* React-Redux, Redux-toolkit.
+* Next Auth.
+* React Toastify.
+* React Icons.
+* React Hook forms.
+* Daisy UI.
+* Tailwind Css.
+* Github and Google Authentication.
